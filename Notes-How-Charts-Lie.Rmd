@@ -1,0 +1,41 @@
+---
+title: "Notes on the book how charts lie"
+author: "P. Adames"
+date: "11/1/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+```
+
+## Chart composition
+
+Every chart can be understood as composed of the scaffolding and the content.
+
+Using ggplot this can be easily sees as the layers used to build the chart.
+
+```{r ggplot2 chart composition, echo =TRUE, fig.align='center', fig.cap="The scaffolding of the chart."}
+years <- seq(from = 2000, to = 2020)
+values <- 2.6 + seq_along(years) + runif(seq_along(years))*1.75
+g <- qplot() + labs(title = "Values from 2000 to 2020 in units of x.",
+                    x = "Values, x units",
+                    y = "Year")
+g
+```
+
+```{r ggplot2 content, fig.align='center', fig.cap="The content of the chart"}
+g2 <- qplot() +  geom_point(aes(x=years, y=values))
+g2
+```
+
+```{r ggplot whole chart, fig.align='center', fig.cap= "The whole chart"}
+g + geom_point(aes(x=years, y=values))
+```
+
+## Information encoding
+
+The content is the iformation to be displayed. The way it is encoded into the scaffolding must be adequate to the meaning it carries. This is closely tied to the context it comes from and the way it is used. There are guidelines to satisfy these constraints but no hard and fast general rules.
+
+
