@@ -36,6 +36,6 @@ g + geom_point(aes(x=years, y=values))
 
 ## Information encoding
 
-The content is the iformation to be displayed. The way it is encoded into the scaffolding must be adequate to the meaning it carries. This is closely tied to the context it comes from and the way it is used. There are guidelines to satisfy these constraints but no hard and fast general rules.
+The content is the information to be displayed. The way it is encoded into the scaffolding must be adequate to the meaning it carries. This is closely tied to the context it comes from and the way it is used. There are guidelines to satisfy these constraints but no hard and fast general rules.
 
 
