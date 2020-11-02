@@ -38,4 +38,6 @@ g + geom_point(aes(x=years, y=values))
 
 The content is the information to be displayed. The way it is encoded into the scaffolding must be adequate to the meaning it carries. This is closely tied to the context it comes from and the way it is used. There are guidelines to satisfy these constraints but no hard and fast general rules.
 
+Two excellent examples of the effect of the context on the decisions made to plot information are: the plot of average annual world temperature over several recent decades and the plot of the average world life expectancy by year. In the former example a change of a couple of degrees over a one hundred years can mean drastic changes in sea level and global climate patterns of precipitation and drought affecting food crops and the stability of whole nations, thus choosing a zero to one hundred degrees Farenheit hides the magnitud of the change, plus the zero base is completely meaningless as it is an arbitrary value unrelated to climate change in this context. The latter example is also very sensitive to the location of the first value of the vertical scale, with zero year of life expectancy being also meaningless and downplaying the magnitude of the remarkable improvements achieved in recent decades.
+
 
